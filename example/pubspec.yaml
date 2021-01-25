@@ -4,7 +4,12 @@ description: An example of how to use the chewie for Flutter
 dependencies:
   chewie:
     path: ../
-  video_player: ^1.0.0
+  # Custom video player with custom loadControl for exoplayer
+  video_player: #^1.0.0
+    git:
+      url: https://github.com/ayush221b/plugins.git
+      path: packages/video_player/video_player
+      ref: 5869d044b03d51ce39529d6b546adfd10fc5900a
   auto_orientation: ^1.0.6
   flutter:
     sdk: flutter
